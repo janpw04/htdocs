@@ -23,7 +23,6 @@ body{ /*for image*/
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
   
 .main_container{
@@ -39,12 +38,14 @@ body{ /*for image*/
 }
 
 .inputUsername{
+    font-weight: bold;
+    font-size: large;
     color:antiquewhite;
     border: 0;
     background-color: rgb(17, 47, 51, 0.1);
     height: 5%;
     width: 100%;
-    padding-left: 5px;
+    padding-left: 10;
     transition: background-color 0.4s ease-out;
 }
 
@@ -56,15 +57,18 @@ body{ /*for image*/
 .inputUsername::placeholder{
     color: rgb(17, 47, 51);
     font-weight: bold;
+    font-size: medium;
 }
 
 .inputPassword{
+    font-weight: bold;
+    font-size: large;
     color:antiquewhite;
     border: 0;
     background-color: rgb(17, 47, 51, 0.1);
     height: 5%;
     width: 100%;
-    padding-left: 5px;
+    padding: 10;
     transition: background-color 0.4s ease-out;
 }
 
@@ -76,10 +80,13 @@ body{ /*for image*/
 .inputPassword::placeholder{
     color: rgb(17, 47, 51);
     font-weight: bold;
+    font-size: medium;
 }
 
 .login_button{
-    color: rgba(34, 93, 100, 0,1);    
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(17, 47, 51);
     border: 0;
     background-color: rgb(17, 47, 51, 0.1);
     height: 5%;
@@ -93,7 +100,9 @@ body{ /*for image*/
 }
 
 .register_button{
-    color: rgba(34, 93, 100, 0,1);   
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(17, 47, 51);
     border: 0;
     background-color: rgb(17, 47, 51, 0.1);
     height: 5%;
