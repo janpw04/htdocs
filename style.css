@@ -1,79 +1,108 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
 body{
-    display: grid;
+    display: flex;
     justify-content: center;
-    background-color: rgba(23, 64, 70, 0.5);
+}
+
+body{ /*for image*/
+    background-image: url("images/body-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed; 
+    background-color: rgba(255, 112, 93);
 }
 
 .main{
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
   
 .main_container{
+    width: 300px;
     text-align: center;
     padding: 20px;
     background-color: #ffffff;
-    border: 0;
+    border-top: 0;
     border-radius: 5%;
-    box-shadow: 0 4px 8px rgba(58, 57, 57, 0.3);
-    background-color: rgb(17, 47, 51, 0.5);
+    box-shadow: 0 16px 32px rgba(49, 49, 49, 0.7);
+    background-color: rgb(17, 47, 51, 0.15);
+    font-size: 20px;
 }
 
 .inputUsername{
     color:antiquewhite;
     border: 0;
-    background-color: rgb(17, 47, 51, 0.5);
+    background-color: rgb(17, 47, 51, 0.1);
     height: 5%;
-    width: 200px;
+    width: 100%;
     padding-left: 5px;
     transition: background-color 0.4s ease-out;
 }
 
 .inputUsername:hover{
-    background-color:antiquewhite;
+    background-color:rgb(250, 235, 215, 0.1);
     color: rgb(17, 47, 51);
+}
+
+.inputUsername::placeholder{
+    color: rgb(17, 47, 51);
+    font-weight: bold;
 }
 
 .inputPassword{
     color:antiquewhite;
     border: 0;
-    background-color: rgb(17, 47, 51, 0.5);
+    background-color: rgb(17, 47, 51, 0.1);
     height: 5%;
-    width: 200px;
+    width: 100%;
+    padding-left: 5px;
     transition: background-color 0.4s ease-out;
 }
 
 .inputPassword:hover{
-    background-color:antiquewhite;
+    background-color:rgb(250, 235, 215, 0.1);
     color: rgb(17, 47, 51);
 }
 
-.login_button{
+.inputPassword::placeholder{
+    color: rgb(17, 47, 51);
+    font-weight: bold;
+}
 
-    color: antiquewhite;
+.login_button{
+    color: rgba(34, 93, 100, 0,1);    
     border: 0;
-    background-color: rgb(17, 47, 51, 0.5);
+    background-color: rgb(17, 47, 51, 0.1);
     height: 5%;
     width: 42%;
     transition: background-color 0.4s ease-out;
 }
 
 .login_button:hover{
-    background-color:antiquewhite;
+    background-color:rgb(250, 235, 215, 0.1);
     color: rgb(17, 47, 51);
 }
 
 .register_button{
-
-    color: antiquewhite;
+    color: rgba(34, 93, 100, 0,1);   
     border: 0;
-    background-color: rgb(17, 47, 51, 0.5);
+    background-color: rgb(17, 47, 51, 0.1);
     height: 5%;
     width: 55%;
     transition: background-color 0.4s ease-out;
 }
 
 .register_button:hover{
-    background-color:antiquewhite;
+    background-color:rgb(250, 235, 215, 0.1);
     color: rgb(17, 47, 51);
 }
 
