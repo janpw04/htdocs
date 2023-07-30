@@ -1,3 +1,5 @@
+const loginForm = document.getElementById("main_container");
+const loginButton = document.getElementById("");
 
 // Function to check if the device is a mobile phone
 function isMobile() {
