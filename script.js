@@ -1,19 +1,17 @@
-const loginForm = document.getElementById("main_container");
-const loginButton = document.getElementById("");
+const login_form = document.getElementById("login_form");
+const login_button = document.getElementById("login_button");
+const login_error_message = document.getElementById("error_message");
 
-// Function to check if the device is a mobile phone
-function isMobile() {
-    return window.innerWidth <= 768; // Adjust the width as needed
-}
 
-// Function to add a class to the <body> tag based on device type
-function addDeviceClass() {
-    if (isMobile()) {
-        document.body.classList.add('mobile');
+login_button.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = login_form.username.value;
+    const password = login_form.input_password.value;
+
+    if(username === "user" && password === "pw") {
+        alert("You have successfully logged in.");
+        location.reload(); //Can be changed to whatever should happen if data correct
     } else {
-        document.body.classList.add('desktop');
+        login_error_message.style.opacity = 1;
     }
-}
-
-// Call the function on page load
-addDeviceClass();
+})
