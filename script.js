@@ -11,7 +11,6 @@ function loginButtonClicked(){
     if(log_username === user.cUsername && log_password === user.cPassword || log_username === 'user' && log_password === 'pw') {
         alert("You have successfully logged in!");
         console.log("You have successfully logged in!")
-        location.reload(); //Can be changed to whatever should happen if data correct
     } else {
         console.log("Wrong username or password");
         login_error_message.style.opacity = 1;
@@ -29,7 +28,7 @@ function registerButtonClicked(){
 
     user = u;
 
-    console.log(user)
+    console.log(user);
 }
 
 class User{     
@@ -44,6 +43,10 @@ class User{
     }
     get getPassword() {
         return this.cPassword;
+    }
+
+    get getUser(){
+        return User;
     }
 
     setUsernameAndPassword(reg_username, reg_password) {
