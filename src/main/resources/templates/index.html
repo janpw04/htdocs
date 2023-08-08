@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Site</title>
+    </head>
+    <header>
+        <h1>
+        </h1>
+    </header>
+    <body>
+        <div class="main">
+            <div class="main_container">
+                <form id="login_form">
+                    <p>
+                        <input class="inputUsername" type="text" name="username" id="inputUsername" placeholder="USERNAME" cols="30" rows="10"></textarea>
+                    </p>
+                    <p>
+                        <input class="inputPassword" type="password" name="input_password" id="inputPassword" placeholder="PASSWORD" cols="30" rows="10"></textarea>
+                    </p>
+                </form>
+                <p>
+                    <button class="login_button" onclick="loginButtonClicked()"><b>LOGIN</b></button>
+                    <button class="register_button" onclick=" registerButtonClicked()"><b>REGISTER</b></button>
+                </p>
+            </div>
+            <!-- Einlogdaten falsch Fenster -->
+            <div class="login_error">
+                <p id="error_message">
+                    Daten falsch! Probieren sie es erneut.
+                </p>
+                <p id="ok_button">
+                    <button type="button">OK</button>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
